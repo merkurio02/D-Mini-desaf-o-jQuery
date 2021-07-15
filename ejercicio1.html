@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div style="background-color:red;border: 1px solid gray;margin:10px;padding: 10px">
+                <span id="click">haz click!!!</span>
+            </div>
+            <div id="cajaCambiame" style="background-color:white;border: 1px solid gray;margin:10px;padding: 10px">
+                <span >Cambiame</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#click').click(function () {
+            $('#cajaCambiame').css('background-color', 'red');
+            $('#cajaCambiame').animate({height: '100px'},3000);
+        });
+    });
+
+
+</script>
+
+</html>
